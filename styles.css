@@ -1,0 +1,68 @@
+body { 
+	background-color: gray;
+	font-family: sans-serif;
+}
+
+.flex_container{
+	display: flex;
+	background-color: lightgray;
+	flex-direction: column;
+}
+
+#main_nav{
+	background-color: black;
+	padding: 5px;
+	text-align: center;
+}
+
+#nav_website_name{
+	flex-grow: 2.5;
+}
+
+.nav_content{
+	background-color: rgb(157, 91, 201);
+	margin: 5px;
+	padding: 5px;
+	font-size: 1.25em;
+	flex: 1;
+	display: inline-block;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+
+
+.content{
+	display: flex;
+	background-color: black;
+	flex-direction: row;
+}
+
+
+.current_content{
+	background-color: rgb(157, 91, 201);	
+	margin: 10px;
+	flex: 2.5;
+	height: 100vh;
+}
+
+.content_selection{
+	display: flex;
+	text-align: center;
+	background-color: black;
+	margin: 2px;
+	flex-direction: column;
+	flex: 1;
+}
+
+.example{
+	background-color: rgb(157, 91, 201);;
+	margin: 5px;
+	display: inline-block;
+	line-height: 100px;
+	vertical-align: middle;
+}
+
+.current_page_title{
+	line-height: 150px;
+}
