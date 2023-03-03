@@ -1,6 +1,17 @@
 body { 
-	background-color: gray;
+	background-color: black;
 	font-family: sans-serif;
+}
+
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: underline;
+	color : white;
+
 }
 
 .flex_container{
@@ -23,7 +34,8 @@ body {
 	background-color: rgb(157, 91, 201);
 	margin: 5px;
 	padding: 5px;
-	font-size: 1.25em;
+	font-size: 1.5em;
+	font-weight: bold;
 	flex: 1;
 	display: inline-block;
 	line-height: 50px;
@@ -41,7 +53,7 @@ body {
 
 .current_content{
 	background-color: rgb(157, 91, 201);	
-	margin: 10px;
+	margin: 5px;
 	flex: 2.5;
 	height: 100vh;
 }
@@ -53,6 +65,7 @@ body {
 	margin: 2px;
 	flex-direction: column;
 	flex: 1;
+	font-size: 2em;
 }
 
 .example{

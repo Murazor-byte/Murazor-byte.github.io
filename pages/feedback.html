@@ -21,7 +21,31 @@
 			</div>
 
 			<div class="content" id="main_content">
-				<div class="current_content">Current Content</div>
+				<div class="current_content">Current Content
+
+					<form id="FeedbackForm" onsubmit="processForm()">
+						<p>To give us some feedabck, please fill in the follow form<br></p>
+
+						<fieldset>
+							<legend>Feeback Submission</legend>
+							<label for="feedaback_message">What's the problem?</label>
+							<input id="feedaback_message" type="text" name="feedback_message" size="50"><br><br>
+
+							<label for="rating">How would you rate your experience with us?</label>
+								<input type="radio" id="rating1" name="rating" value="1">Terrible
+								<input type="radio" id="rating2" name="rating" value="2">Bad
+								<input type="radio" id="rating3" name="rating" value="3">Average
+								<input type="radio" id="rating4" name="rating" value="4">Good
+								<input type="radio" id="rating5" name="rating" value="5">Excellent
+
+							<p>Let us know where we can reach you</p>
+							<label for="email">Email Address</label>
+							<input id="email" type="text" name="email" size="35"><br><br>
+
+							<input type="submit" value="Submit Feeback">
+						</fieldset>
+					</form>
+				</div>
 
 				<div class="content_selection">
 					<div class="example current_page_title">Current Page Title</div>
