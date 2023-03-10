@@ -28,13 +28,13 @@ ul{
 
 
 
+
 /*Navigation Bar*/
 .nav_content li{
 	display: flex;
 	flex: 1.5;
 	margin: 5px;
 	line-height: 75px;
-	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
 }
@@ -50,26 +50,22 @@ ul{
 	display: inline-block;
 }
 
-.nav_content li a{
+.nav_content li button{
 	background-color: rgb(157, 91, 201);
 	width: 100%;
-	height: 80px;
-	margin-top: 10px;
+	height: 90px;
+	font-size: 1.25em;
+	margin-top: 5px;
 }
 
-li a:link{
-	text-decoration: none;
-	color: black;
-}
-
-li a:hover{
+li button:hover{
 	text-decoration: none;
 	color : white;
 	background-color: rgb(112, 39, 160)
 }
 
-li a:visited{
-	color: black;
+li button:visited{
+	color:black;
 }
 
 
@@ -81,13 +77,13 @@ li a:visited{
 	background-color: rgb(157, 91, 201);	
 	margin: 5px;
 	flex: 1;
-	height: 100vh;
+	height: 85vh;
 }
 
 .current_content_title{
 	text-align: center;
-	font-size: 3em;
-	margin: 8px;
+	font-size: 1.5em;
+	margin: 5px;
 }
 
 .example_content{
@@ -95,6 +91,8 @@ li a:visited{
 	margin: 5px;
 	padding: 5px;
 }
+
+
 
 
 
@@ -106,8 +104,8 @@ li a:visited{
 
 #current_page_title{
 	background-color: rgb(157, 91, 201);
-	line-height: 125px;
-	font-size: 2em;
+	line-height: 150px;
+	font-size: 2.5em;
 	display: inline-block;
 }
 
@@ -115,17 +113,17 @@ li a:visited{
 	display: flex;
 	margin: 5px;
 	text-align: center;
-	width: 450px;
+	width: 500px;
 }
 
-.example li a{
+.example li button{
 	background-color: rgb(157, 91, 201);;
 	line-height: 100px;
 	font-size: 1.5em;
 	width: 100%;
 }
 
-.example li a:hover{
+.example li button:hover{
 	text-decoration: none;
 	color : white;
 	background-color: rgb(112, 39, 160)
