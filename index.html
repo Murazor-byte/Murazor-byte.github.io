@@ -6,6 +6,7 @@
 		<title>Home Page</title>
 		<link rel="stylesheet" href="../styles.css">
 		<script src="../scripts/processFeebackForm.js"></script>
+		<script src="../scripts/pageNav.js"></script>
 	</head>
 
 	<body>
@@ -13,19 +14,19 @@
 			<nav>
 				<ul class="content nav_content">
 					<li id="nav_website_name">  Website Name</li>
-					<li id="nav_home"><a href="index.html"> Home </a></li>
-					<li id="nav_aboutMe"><a href="aboutMe.html"> About Me</a></li>
-					<li id="nav_projects"><a href="projects.html"> Projects</a></li>
-					<li id="nav_experience"><a href="experience.html"> Experience</a></li>
-					<li id="nav_resume"><a href="resume.html"> Resume</a></li>
-					<li id="nav_feedback"><a href="feedback.html"> Feedback</a></li>
+					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
+					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
+					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
+					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
+					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<!--<li id="nav_feedback"> <a href="feedback.html"> Feedback</a> </li>-->
 				</ul>
 			</nav>
 
 			<div class="content" id="main_content">
 				<div class="current_content">
 					<div class="current_content_title">
-						Title of Content
+						<h1>Title of Content</h1>
 					</div>
 					<div class="example_content">
 						<p>
@@ -36,12 +37,12 @@
 
 				<div >
 					<ul class="content_selection example">
-						<li id="current_page_title">Current Page Title</li>
-						<li id="content_selection_1"><a href="#">Content selection 1</a></li>
-						<li id="content_selection_2"><a href="#">Content selection 2</a></li>
-						<li id="content_selection_3"><a href="#">Content selection 3</a></il>
-						<li id="content_selection_4"><a href="#">Content selection 4</a></li>
-						<li id="content_selection_5"><a href="#">Content selection 5</a></li>
+						<li id="current_page_title">Home</li>
+						<li> <button id="content_selection_1" onclick=""> Content Selection 1</button> </li>
+						<li> <button id="content_selection_2" onclick=""> Content Selection 2</button> </li>
+						<li> <button id="content_selection_3" onclick=""> Content Selection 3</button> </li>
+						<li> <button id="content_selection_4" onclick=""> Content Selection 4</button> </li>
+						<li> <button id="content_selection_5" onclick=""> Content Selection 5</button> </li>
 					</ul>
 				</div>
 			</div>
