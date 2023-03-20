@@ -4,29 +4,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Home Page</title>
-		<link rel="stylesheet" href="styles.css">
-		<script src="scripts/processFeebackForm.js"></script>
-		<script src="scripts/pageNav.js"></script>
+		<link rel="stylesheet" href="../styles.css">
+		<script src="../scripts/processFeebackForm.js"></script>
+		<script src="../scripts/pageNav.js"></script>
 	</head>
 
 	<body>
 		<div class="flex_container">
 			<nav>
 				<ul class="content nav_content">
-					<li id="nav_website_name">  Website Name</li>
+					<li id="nav_website_name">  David Jackson</li>
 					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
 					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
 					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
 					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
 					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
-					<!--<li id="nav_feedback"> <a href="feedback.html"> Feedback</a> </li>-->
+					<!--><li id="nav_feedback"><a href="feedback.html"> Feedback</a></li><-->
 				</ul>
 			</nav>
 
 			<div class="content" id="main_content">
 				<div class="current_content">
 					<div class="current_content_title">
-						<h1>Title of Content</h1>
+						<h1>Welomce To My Webpage!</h1>
 					</div>
 					<div class="example_content">
 						<p>
@@ -38,19 +38,15 @@
 				<div >
 					<ul class="content_selection example">
 						<li id="current_page_title">Home</li>
-						<li> <button id="content_selection_1" onclick=""> Content Selection 1</button> </li>
-						<li> <button id="content_selection_2" onclick=""> Content Selection 2</button> </li>
-						<li> <button id="content_selection_3" onclick=""> Content Selection 3</button> </li>
-						<li> <button id="content_selection_4" onclick=""> Content Selection 4</button> </li>
-						<li> <button id="content_selection_5" onclick=""> Content Selection 5</button> </li>
+						<li> <button id="content_selection_1" onclick="openNewPage('content_selection_1')" style="visibility: hidden"> Content Selection 1</button> </li>
+						<li> <button id="content_selection_2" onclick="openNewPage('content_selection_2')" style="visibility: hidden"> Content Selection 2</button> </li>
+						<li> <button id="content_selection_3" onclick="openNewPage('content_selection_3')" style="visibility: hidden"> Content Selection 3</button> </li>
+						<li> <button id="content_selection_4" onclick="openNewPage('content_selection_4')" style="visibility: hidden"> Content Selection 4</button> </li>
+						<li> <button id="content_selection_5" onclick="openNewPage('content_selection_5')" style="visibility: hidden"> Content Selection 5</button> </li>
 					</ul>
 				</div>
 			</div>
 		</div>
-
-		<footer>
-		</footer>
-
 	</body>
 
 </html>
