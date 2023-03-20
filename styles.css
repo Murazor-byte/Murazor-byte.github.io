@@ -76,6 +76,7 @@ li button:visited{
 .current_content{
 	background-color: rgb(157, 91, 201);	
 	margin: 5px;
+	margin-left: 10px;
 	flex: 1;
 	height: 85vh;
 }
@@ -107,6 +108,11 @@ li button:visited{
 	line-height: 150px;
 	font-size: 2.5em;
 	display: inline-block;
+}
+
+.example{
+	margin: 0px;
+	margin-right: 5px;
 }
 
 .example li{
