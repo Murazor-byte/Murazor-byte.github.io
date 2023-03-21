@@ -117,5 +117,5 @@ function openNewPage(page){
     let currentSelection = document.getElementById(page).innerText;
     let currentPageTitle = document.getElementById('current_page_title').innerHTML;
 
-   window.open("http://localhost/Quiz-mywebsite/pages/" + currentPageTitle.replace(/\s/g, '').toLowerCase() + "/"  + currentSelection.replace(/\s/g, '').toLowerCase() + ".html", "_self");
+   window.open("https://murazor-byte.github.io//pages/" + currentPageTitle.replace(/\s/g, '').toLowerCase() + "/"  + currentSelection.replace(/\s/g, '').toLowerCase() + ".html", "_self");
 }
