@@ -1,17 +1,24 @@
 /*Base elements*/
 body { 
-	background-color: black;
-	font-family: sans-serif;
+	background-color: #18122B;
+	color: #D27685;
 	margin: 0px;
 }
 
 /*overwriting ul default top-bottom margins of 10px and padding of 40px*/
 ul{
-	margin: 5px;
+	margin: 0px 5px 5px 5px;
 	padding: 0px;
 	list-style-type: none;
 }
 
+button{
+	border: 0px;
+}
+
+.nav{
+	background-color: #18122B;
+}
 
 
 
@@ -23,7 +30,11 @@ ul{
 }
 
 .content{
-	display: flex;
+	display: flex;	
+}
+
+.nav_content{
+	margin: 0px;
 }
 
 
@@ -33,39 +44,42 @@ ul{
 .nav_content li{
 	display: flex;
 	flex: 1.5;
-	margin: 5px;
+	margin: 0px 2px 2px 2px;
 	line-height: 75px;
 	font-weight: bold;
 	text-align: center;
 }
 
 #nav_website_name {
-	background-color: rgb(157, 91, 201);
-	margin: 5px;
-	height: 100px;
-	font-size: 3.5em;
-	line-height: 100px;
-	flex-grow: 6;
+	background-color: #37306B;;
+	margin: 0px 5px 5px 2px;
+	height: 89px;
+	font-size: 2em;
+	line-height: 89px;
+	flex-grow: 2;
 	text-align: center;
 	display: inline-block;
 }
 
 .nav_content li button{
-	background-color: rgb(157, 91, 201);
+	background-color: #37306B;
 	width: 100%;
 	height: 90px;
 	font-size: 1.25em;
-	margin-top: 5px;
 }
 
 li button:hover{
 	text-decoration: none;
-	color : white;
-	background-color: rgb(112, 39, 160)
+	color : black;
+	background-color: #9E4784;
+}
+
+li button{
+	color: #D27685;
 }
 
 li button:visited{
-	color:black;
+	color: #D27685;
 }
 
 
@@ -74,22 +88,26 @@ li button:visited{
 
 /*Main Content*/
 .current_content{
-	background-color: rgb(157, 91, 201);	
-	margin: 5px;
-	margin-left: 10px;
+	display: inline;
+	background-color: #37306B;
+	margin: 5px 5px 5px 2px;
 	flex: 1;
-	height: 85vh;
+	height: 88vh;
 }
 
 .current_content_title{
 	text-align: center;
 	font-size: 1.5em;
-	margin: 5px;
+	margin: 0px;
+}
+
+.current_content_title h1{
+	margin-top: 10px;
 }
 
 .example_content{
 	font-size: 20px;
-	margin: 5px;
+	margin: 5px 10px 5px 10px;
 	padding: 5px;
 }
 
@@ -101,36 +119,32 @@ li button:visited{
 .content_selection{
 	display: flex;
 	flex-direction: column;
+	margin: 3px 2px 0px 0px;
 }
 
 #current_page_title{
-	background-color: rgb(157, 91, 201);
+	background-color: #37306B;
 	line-height: 150px;
 	font-size: 2.5em;
 	display: inline-block;
 }
 
-.example{
-	margin: 0px;
-	margin-right: 5px;
-}
-
-.example li{
+.content_selection li{
 	display: flex;
-	margin: 5px;
+	margin: 2px;
 	text-align: center;
 	width: 500px;
 }
 
-.example li button{
-	background-color: rgb(157, 91, 201);;
+.content_selection li button{
+	background-color: #37306B;
 	line-height: 100px;
 	font-size: 1.5em;
 	width: 100%;
 }
 
-.example li button:hover{
+.content_selection li button:hover{
 	text-decoration: none;
-	color : white;
-	background-color: rgb(112, 39, 160)
+	color : black;
+	background-color :#9E4784;
 }

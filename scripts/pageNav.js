@@ -33,6 +33,7 @@ function updateExampleList(page){
         case "Projects": updateProjectsExampleList(); break;
         case "Experience": updateExpereienceExampleList(); break;
         case "Resume": window.open("http://localhost/Quiz-mywebsite/pages/resume.html", "_self"); break;
+        case "Feedback" : window.open("http://localhost/Quiz-mywebsite/pages/feedback.html", "_self"); break;
         default:
     }
 }
