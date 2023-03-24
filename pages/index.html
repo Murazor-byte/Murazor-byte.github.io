@@ -13,7 +13,7 @@
 		<div class="flex_container">
 			<nav class ="nav">
 				<ul class="content nav_content">
-					<li id="nav_website_name">  David Jackson</li>
+					<li id="nav_website_name"> David Jackson</li>
 					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
 					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
 					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
@@ -26,7 +26,12 @@
 			<div class="content" id="main_content">
 				<div class="current_content">
 					<div class="current_content_title">
-						<h1>Welomce To My Webpage!</h1>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+						<h1 id="content_title">Welomce To My Webpage!</h1>
+						<div id="fill"></div>
 					</div>
 					<div class="example_content">
 						<p>

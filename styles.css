@@ -1,7 +1,7 @@
 /*Base elements*/
 body { 
-	background-color: #18122B;
-	color: #D27685;
+	background-color: #2F2F2F;
+	color: #A05FCC;
 	margin: 0px;
 }
 
@@ -14,13 +14,91 @@ ul{
 
 button{
 	border: 0px;
+	cursor: pointer;
 }
 
 .nav{
-	background-color: #18122B;
+	background-color: #2F2F2F;
 }
 
 
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin: 22px 50px 0px 19px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #635985;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #A05FCC;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #683DBA;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #683DBA;
+  }
+  
+  input:checked + .slider:before {
+	transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
+
+
+
+/* Light colors
+	#723697		--body background, nav background
+	#8F42BD		--current_content background color, nav content button, content_selection li button
+	#635985		--slider background
+	#B3B3B3		--button hover, slider background checked, page titles
+	#CCCCCC		--font color, slider before, li button color, button visisted
+
+
+   Dark colors
+	#2F2F2F		--body background, nav background
+	#494949		--current_content background color, nav content button, content_selection li button
+	#635985		--slider background
+	#683DBA		--button hover, slider background checked, page titles
+	#A05FCC		--font color, slider before, li button color, button visisted
+*/
 
 
 /*Base flex elements */
@@ -44,42 +122,43 @@ button{
 .nav_content li{
 	display: flex;
 	flex: 1.5;
-	margin: 0px 2px 2px 2px;
+	margin: 0px 0px 2px 0px;
 	line-height: 75px;
 	font-weight: bold;
-	text-align: center;
 }
 
 #nav_website_name {
-	background-color: #37306B;;
-	margin: 0px 5px 5px 2px;
-	height: 89px;
+	background-color: #683DBA;
+	color: #2F2F2F;
+	margin: 0px 2px 5px 2px;
+	padding-left: 10px;
+	height: 81px;
 	font-size: 2em;
-	line-height: 89px;
-	flex-grow: 2;
-	text-align: center;
+	line-height: 81.px;
+	flex-grow: 1.75;
+	text-align: left;
 	display: inline-block;
 }
 
 .nav_content li button{
-	background-color: #37306B;
+	background-color: #494949;
 	width: 100%;
-	height: 90px;
+	height: 80px;
 	font-size: 1.25em;
 }
 
 li button:hover{
 	text-decoration: none;
 	color : black;
-	background-color: #9E4784;
+	background-color: #683DBA;
 }
 
 li button{
-	color: #D27685;
+	color: #A05FCC;
 }
 
 li button:visited{
-	color: #D27685;
+	color: #A05FCC;
 }
 
 
@@ -89,13 +168,14 @@ li button:visited{
 /*Main Content*/
 .current_content{
 	display: inline;
-	background-color: #37306B;
+	background-color: #494949;
 	margin: 5px 5px 5px 2px;
 	flex: 1;
-	height: 88vh;
+	height: 89vh;
 }
 
 .current_content_title{
+	display: flex;
 	text-align: center;
 	font-size: 1.5em;
 	margin: 0px;
@@ -103,6 +183,12 @@ li button:visited{
 
 .current_content_title h1{
 	margin-top: 10px;
+	flex-grow: 5;
+	text-align: center;
+}
+
+#fill{
+	flex: 1;
 }
 
 .example_content{
@@ -119,26 +205,28 @@ li button:visited{
 .content_selection{
 	display: flex;
 	flex-direction: column;
-	margin: 3px 2px 0px 0px;
+	margin: 5px 2px 0px 0px;
+	width: 30vh;
 }
 
 #current_page_title{
-	background-color: #37306B;
-	line-height: 150px;
+	background-color: #683DBA;
+	color: #2F2F2F;
+	margin-bottom: 2px;
+	line-height: 100px;
 	font-size: 2.5em;
 	display: inline-block;
 }
 
 .content_selection li{
 	display: flex;
-	margin: 2px;
+	margin: 0px 2px 0px 2px;
 	text-align: center;
-	width: 500px;
 }
 
 .content_selection li button{
-	background-color: #37306B;
-	line-height: 100px;
+	background-color: #494949;
+	line-height: 70px;
 	font-size: 1.5em;
 	width: 100%;
 }
@@ -146,5 +234,5 @@ li button:visited{
 .content_selection li button:hover{
 	text-decoration: none;
 	color : black;
-	background-color :#9E4784;
+	background-color :#683DBA;
 }
