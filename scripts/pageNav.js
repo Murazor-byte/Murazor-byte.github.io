@@ -33,7 +33,7 @@ function updateExampleList(page){
         case "Projects": updateProjectsExampleList(); break;
         case "Experience": updateExpereienceExampleList(); break;
         case "Resume": window.open("https://murazor-byte.github.io/pages/resume.html", "_self"); break;
-        case "Feedback" : window.open("https://murazor-byte.github.io/pages/feeback.html", "_self"); break;
+        case "Feedback" : window.open("https://murazor-byte.github.io/pages/feedback.html", "_self"); break;
         default:
     }
 }
