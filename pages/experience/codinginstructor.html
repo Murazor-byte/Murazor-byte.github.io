@@ -14,29 +14,73 @@
 			<nav class ="nav">
 				<ul class="content nav_content">
 					<li id="nav_website_name">  David Jackson</li>
+					<li id="fill_nav"></li>
 					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
 					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
 					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
 					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
 					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<li id="nav_feedback"><button onClick="updateCurrentPage('Feedback')">Feedback</button></li>
 				</ul>
 			</nav>
 
 			<div class="content" id="main_content">
-				<div class="current_content">
-					<div class="current_content_title">
+
+				<div class="contacts">
+					<aside class="contact_fill"></aside>
+					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../../images/mail.png"></a></aside>
+					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../../images/linkedin.svg"></a></aside>
+					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../../images/github-mark-white.svg"></a></aside>
+					<aside class="contacts" style="margin:0px;">
 						<label class="switch">
 							<input type="checkbox">
 							<span class="slider round"></span>
 						</label>
+					</aside>
+				</div>
+
+
+				<div class="current_content">
+					<div class="current_content_title">
 						<h1 id="content_title">Coding Instructor</h1>
 						<div id="fill"></div>
 					</div>
 
+					<img src="../../images/work/coding.jpg" style="width: 65%;   display: block; margin-left: auto; margin-right: auto;">
+
+					<div class="skills">
+						<span class="skillset" id="skillset1">C</span>
+						<span class="skillset" id="skillset2">Instructor</span>
+						<span class="skillset" id="skillset3">Volunteer</span>
+					</div>
+
 					<div class="example_content">
-						<p>
-							Description of the current content
+						<p style="margin: 3px 0px;">Cholla Elementary, Casa Grande.</p>
+						<p style="margin: 3px 0px;">April 2022</p>
+
+						<hr/>
+
+
+						<h2 class="content_header">Description</h2>
+						<p>Following a 2 month lesson plan, I was an instructor for primary-secondary school children covering the fundamentals and basics of coding. This was an after-school activity for the students, which allowed
+							me to speak to a class of students ranging from 1st to 6th grade over this time.
 						</p>
+
+						<p>The initial classes covered the basics of what coding is and its applications, focusing on the basics of the C programming language. The following courses touched on more in depth knowledge such as methods and classes.
+							The final class ended with a breif Q&A of the industry and majoring in Computer Science as a whole, where the students ended within a hand-on activity covering what they learned in the problem-solving relam.
+						</p>
+
+
+						<hr/>
+
+						<h2 class="content_header">Achievements</h2>
+						<p>I am very fortunate to be given the ability to teach what I love in my studies and hobbies. This experience solidified my abilities to teach complex topics in a simplified form and be much more patient and understanding with others. Some notable take-aways from this experience:</p>
+
+						<ul class="content_list">
+							<li>Planned and instructed the fundamental concepts of programming</li>
+							<li>Taught a group of 10+ students over a course of three weeks, concluding with a hands-on activity</li>
+						</ul>
+
 					</div>
 				</div>
 
@@ -52,10 +96,6 @@
 				</div>
 			</div>
 		</div>
-
-		<footer>
-		</footer>
-
 	</body>
 
 </html>

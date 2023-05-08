@@ -28,12 +28,12 @@ function updateCurrentPageTitle(title){
 function updateExampleList(page){
 
     switch(page){
-        case 'Home': window.open("https://murazor-byte.github.io/pages/index.html", "_self"); break;
-        case "About Me": updateAboutExampleList(); break;
+        case 'Home': window.open("http://localhost/Quiz-mywebsite/pages/index.php", "_self"); break;
+        case "About Me":  window.open("http://localhost/Quiz-mywebsite/pages/aboutme.html", "_self"); break;
         case "Projects": updateProjectsExampleList(); break;
         case "Experience": updateExpereienceExampleList(); break;
-        case "Resume": window.open("https://murazor-byte.github.io/pages/resume.html", "_self"); break;
-        case "Feedback" : window.open("https://murazor-byte.github.io/pages/feedback.html", "_self"); break;
+        case "Resume": window.open("http://localhost/Quiz-mywebsite/pages/resume.html", "_self"); break;
+        case "Feedback" : window.open("http://localhost/Quiz-mywebsite/pages/feedback.html", "_self"); break;
         default:
     }
 }
@@ -53,19 +53,17 @@ function updateHomeExampleList(){
     showContentSelection(0);
 }
 
-function updateAboutExampleList(){
-    showContentSelection(4);
-    contentSelection1.innerText = "Who Am I";
-    contentSelection2.innerText = "Hobbies";
-    contentSelection3.innerText = "Childhood";
-    contentSelection4.innerText = "Prospects";
+function updateAboutMeExampleList(){
+    showContentSelection(0);
 }
 
+
 function updateProjectsExampleList(){
-    showContentSelection(3);
-    contentSelection1.innerText = "baldorf 2.0";
+    showContentSelection(4);
+    contentSelection1.innerText = "baldorf";
     contentSelection2.innerText = "Cards";
     contentSelection3.innerText = "Into the Deep";
+    contentSelection4.innerText = "Art";
 }
 
 function updateExpereienceExampleList(){
@@ -117,5 +115,5 @@ function openNewPage(page){
     let currentSelection = document.getElementById(page).innerText;
     let currentPageTitle = document.getElementById('current_page_title').innerHTML;
 
-   window.open("https://murazor-byte.github.io/pages/" + currentPageTitle.replace(/\s/g, '').toLowerCase() + "/"  + currentSelection.replace(/\s/g, '').toLowerCase() + ".html", "_self");
+   window.open("http://localhost/Quiz-mywebsite/pages/" + currentPageTitle.replace(/\s/g, '').toLowerCase() + "/"  + currentSelection.replace(/\s/g, '').toLowerCase() + ".html", "_self");
 }

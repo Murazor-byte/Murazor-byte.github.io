@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home Page</title>
+		<link rel="stylesheet" href="../../styles.css">
+		<script src="../../scripts/processFeebackForm.js"></script>
+		<script src="../../scripts/pageNav.js"></script>
+	</head>
+
+	<body>
+		<div class="flex_container">
+			<nav class ="nav">
+				<ul class="content nav_content">
+					<li id="nav_website_name">  David Jackson</li>
+					<li id="fill_nav"></li>
+					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
+					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
+					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
+					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
+					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<li id="nav_feedback"><button onClick="updateCurrentPage('Feedback')">Feedback</button></li>
+				</ul>
+			</nav>
+
+			<div class="content" id="main_content">
+
+				<div class="contacts">
+					<aside class="contact_fill"></aside>
+					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../../images/mail.png"></a></aside>
+					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../../images/linkedin.svg"></a></aside>
+					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../../images/github-mark-white.svg"></a></aside>
+					<aside class="contacts" style="margin:0px;">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</aside>
+				</div>
+
+				<div class="current_content">
+					<div class="current_content_title">
+						<h1 id="content_title">baldorf</h1>
+						<div id="fill"></div>
+					</div>
+
+					<img src="../../images/Projects/baldorf/banner.avif" style="width: 65%;   display: block; margin-left: auto; margin-right: auto;">
+
+					<div class="skills">
+						<span class="skillset" id="skillset1">Unity</span>
+						<span class="skillset" id="skillset2">C#</span>
+						<span class="skillset" id="skillset3">Game Dev</span>
+						<span class="skillset" id="skillset4">School</span>
+					</div>
+
+					<div class="example_content">
+						
+						<p>
+							baldorf is a video game developed during the final year of my undergraduate degree for my senior design project. It was a great opportunity to work with a team of 5 other developers, project management and a sponsor - <a class="hyperlink" target="_blank" href="https://mysticrhoads.org/">Mystic Rhoads Productions.</a>
+						</p>
+
+
+						<hr/>
+
+						<h2 class="content_header">Overview</h2>
+						<ol class="content_list nest_listed">
+							<li>Assigned to baldorf project and Mystic Rhoads Productions sponsor.</li>
+							<li>Met with the sponsored company and relevanet documentation to gather inital requirements.</li>
+							<li>The team initiated these requirements using an AGILE scrum development process following a roadmap containing Milestones, Epics, Storeis and Issues.</li>
+							<li>Multiple weekly team meeting were continued throughout the year to develop proposed features found in the roadmap and sponsor feedback.</li>
+							<li>Held weekly sponsor meetings with the sponsored company to provide a weekly status report and provide beneficial feedback for development.</li>
+						</ol>
+
+						<hr/>
+
+						<h2 class="content_header">Team Structure</h2>
+						<p>The team comprised of 10 people, 6 of which being active developers </p>
+
+						<ul class="content_list">
+							<li>7 Students</li>
+							<ul class="content_list nested_list">
+								<li><a class="hyperlink" target="_blank" href="https://jackz.me/">Jackson Bixbsy</a>: Squad Lead, Product Manager</li>
+								<li><a class="hyperlink" target="_blank" href="https://www.linkedin.com/in/davidtjackson37/">David Jackson</a>: Development Manager</li>
+								<li><a class="hyperlink" target="_blank" href="https://www.linkedin.com/in/daniel-perry-742265221//">Danny Perry</a>: Developer</li>
+								<li>Joshua Priester: Developer</li>
+								<li>Zennith Boerger: Developer</li>
+								<li><a class="hyperlink" target="_blank" href="https://kalenwallin.com/">Kalen Wallin</a>: Developer</li>
+								<li><a class="hyperlink" target="_blank" href="https://frie.dev/">Aaron Friesen</a>: Tech Reviewer</li>
+							</ul>
+							<li>2 Faculty</li>
+							<ul class="content_list nested_list">
+								<li><a class="hyperlink" target="_blank" href="https://www.linkedin.com/in/bill-browning-2831131/">William Browning</a>: Project Manager</li>
+								<li><a class="hyperlink" target="_blank" href="https://cse.unl.edu/~jfalkinburg/">Jeffrey Falkinburg</a>: Tribe Lead</li>
+							</ul>
+							<li>1 Industry Coach</li>
+							<ul class="content_list nested_list">
+								<li><a class="hyperlink" target="_blank" href="https://www.linkedin.com/in/sawyernietfeld/">Sawyer Nietfeld</a>: Industry Coach</li>
+							</ul>
+						</ul>
+
+						<hr/>
+
+						<h2 class="content_header">Development</h2>
+						<p>
+							Development of the game was created in the Unity Game Engine mostly using the C# programming language. A total of 6 Releases were made were each platoform were updated, while utilizing a 2 week sprint cycle for the development.
+						</p>
+
+						<hr/>
+
+						<h2 class="content_header">Deployment</h2>
+
+						<p>
+							The app is available on iOS, Android, and Web
+						</p>
+						<h3>Apple App Store - iOS</h3>
+
+						<div class="card" style="display: flex; flex-direction: row;	border: 2px solid #A05FCC; padding:5px; ">
+						<a class="deployment_card" target="_blank" href="https://apps.apple.com/us/app/baldorf/id1496852396?platform=iphone">
+							<div class="deployment_card_text">
+								<h5 style="margin:2px 0px 0px 0px; text-align: left;;">baldorf</h5>
+								<p style="overflow: hidden; margin:0px 0px 2px 0px; padding:0px; text-align: left;;">What is baldorf?  It's a game created by two U.S. Peace Corps Volunteers while they were serving in Jamaica.  Upon their return to the U.S., the two formed the non-profit charitable organization Mystic Rhoads Productions (MRP), and developed baldorf as an MRP product.  In its simplest terms, bald.
+								</p>
+								<div style="flex-direction: column;">
+									<img src="../../images/Projects/baldorf/iosimage.ico" style="width:5%;">
+									<div style="text-align: left; margin-left: 50px; margin-top: -30px; font-size: 15px;"><a href="https://apps.apple.com/us/app/baldorf/id1496852396" style="color:#ccc0d4; text-decoration: none; overflow: hidden;">https://apps.apple.com/us/app/baldorf/id1496852396</a></div>
+								</div>
+							</div>
+							<div class="deployment_card_image">
+								<img src="../../images/Projects/baldorf/ios.avif" style="width: 150px; margin-top: 50px; display: block; margin-left: auto;">
+							</div>
+						</a>
+						</div>
+
+						<h3>Google Play Store - Android</h3>
+
+						<div class="card" style="display: flex; flex-direction: row;	border: 2px solid #A05FCC; padding:5px; ">
+							<a class="deployment_card" target="_blank" href="https://play.google.com/store/apps/details?id=com.MysticRhoads.BaldorfAlpha&hl=en_US&gl=US&pli=1">
+								<div class="deployment_card_text">
+									<h5 style="margin:2px 0px 0px 0px; text-align: left;;">baldorf - Apps on Google Play</h5>
+									<p style="overflow: hidden; margin:0px 0px 2px 0px; padding:0px; text-align: left;;"> A fun ball bouncing game!
+									</p>
+									<div style="flex-direction: column;">
+										<img src="../../images/Projects/baldorf/googleicon.jpg" style="width:5%;">
+										<div style="text-align: left; margin-left: 50px; margin-top: -23px; font-size: 15px;"><a href="https://apps.apple.com/us/app/baldorf/id1496852396" style="color:#ccc0d4; text-decoration: none; overflow: hidden;">https://apps.apple.com/us/app/baldorf/id1496852396</a></div>
+									</div>
+								</div>
+								<div class="deployment_card_image">
+									<img src="../../images/Projects/baldorf/google.avif" style="width: 125px; margin-top: 10px; display: block; margin-left: auto;">
+								</div>
+							</a>
+						</div>
+
+						<h3>WebGL</h3>
+
+						<div class="card" style="display: flex; flex-direction: row;	border: 2px solid #A05FCC; padding:5px; ">
+							<a class="deployment_card" target="_blank" href="https://dorf.mysticrhoads.org/">
+								<div class="deployment_card_text">
+									<h5 style="margin:2px 0px 0px 0px; text-align: left;;">Unity WebGL Player | baldorf</h5>
+									<p style="overflow: hidden; margin:0px 0px 2px 0px; padding:0px; text-align: left;;"> A fun ball bouncing game!
+									</p>
+									<div style="flex-direction: column;">
+										<div style="text-align: left; font-size: 15px;"><a href="https://apps.apple.com/us/app/baldorf/id1496852396" style="color:#ccc0d4; text-decoration: none; overflow: hidden;">https://apps.apple.com/us/app/baldorf/id1496852396</a></div>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<hr/>
+
+						<p>The overall formatting and structure of this page is referenced from one of the developers of the project - Kalen - who I'd highly reccommend you check out at his site <a class="hyperlink" target="_blank" href="https://kalenwallin.com/">here</a>.</p>
+
+					</div>
+				</div>
+
+				<div >
+					<ul class="content_selection">
+						<li id="current_page_title">Projects</li>
+						<li> <button id="content_selection_1" onclick="openNewPage('content_selection_1')">baldorf</button> </li>
+						<li> <button id="content_selection_2" onclick="openNewPage('content_selection_2')">Cards</button> </li>
+						<li> <button id="content_selection_3" onclick="openNewPage('content_selection_3')" >Into the Deep</button> </li>
+						<li> <button id="content_selection_4" onclick="openNewPage('content_selection_4')"> Art</button> </li>
+						<li> <button id="content_selection_5" onclick="openNewPage('content_selection_5')" style="visibility: hidden"> Content Selection 5</button> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

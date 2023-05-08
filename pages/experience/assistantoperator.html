@@ -14,29 +14,82 @@
 			<nav class ="nav">
 				<ul class="content nav_content">
 					<li id="nav_website_name">  David Jackson</li>
+					<li id="fill_nav"></li>
 					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
 					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
 					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
 					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
 					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<li id="nav_feedback"><button onClick="updateCurrentPage('Feedback')">Feedback</button></li>
 				</ul>
 			</nav>
 
 			<div class="content" id="main_content">
-				<div class="current_content">
-					<div class="current_content_title">
+
+				<div class="contacts">
+					<aside class="contact_fill"></aside>
+					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../../images/mail.png"></a></aside>
+					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../../images/linkedin.svg"></a></aside>
+					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../../images/github-mark-white.svg"></a></aside>
+					<aside class="contacts" style="margin:0px;">
 						<label class="switch">
 							<input type="checkbox">
 							<span class="slider round"></span>
 						</label>
+					</aside>
+				</div>
+
+
+				<div class="current_content">
+					<div class="current_content_title">
 						<h1 id="content_title">Assistant Operator</h1>
 						<div id="fill"></div>
 					</div>
 
+					<img src="../../images/work/pca.png" style="width: 40%;   display: block; margin-left: auto; margin-right: auto;">
+
+					<div class="skills">
+						<span class="skillset" id="skillset1">Detail-Oriented</span>
+						<span class="skillset" id="skillset2">Teamwork</span>
+						<span class="skillset" id="skillset3">Reliability</span>
+					</div>
+
+
 					<div class="example_content">
+					
+						<p style="margin: 3px 0px;">PCA, Burlington, Wisconsin.</p>
+						<p style="margin: 3px 0px;">June 2022</p>
+
+						<hr/>
+
+
+						<h2 class="content_header">Description</h2>
+
 						<p>
-							Description of the current content
+							During the summer month of June - August I worked at Packaging Corporation of America's facility in Burlington, Wisconsin. At this role I was employed toward a variety of roles, operatorating on numerous industrial machines.
+							My roles varied throughout the weeks such as:
 						</p>
+						<ul class="content_list">
+							<li>Operating the corrugator truck by delivering the loads throughout the facility.</li>
+							<li>Worked within the boiler room, for disposing any misprinted loads or boxes.</li>
+							<li>General cleaning of machines, site and general labor.</li>
+							<li>Packing and stacking boxes as they came.</li>
+						</ul>
+
+						<hr/>
+
+						<h2 class="content_header">Achievements</h2>
+
+						<p>Although this was a short-lasting role, spaning a few months, this gave me considerable understanding of working back-to-back overtime shifts in an incredibly fast paced work environment, while continuously learning on the job
+							as often the bottle-beck of the whole facility.
+						</p>
+
+						<ul class="content_list">
+							<li>Ensured efficient workflow by performing a variety of manufacturing tasks using production equipment.</li>
+							<li>Accounted for minor equipment adjustments and ensured quality checks were performed.</li>
+						</ul>
+
+
 					</div>
 				</div>
 
@@ -52,10 +105,6 @@
 				</div>
 			</div>
 		</div>
-
-		<footer>
-		</footer>
-
 	</body>
 
 </html>

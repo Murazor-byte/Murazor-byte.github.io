@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home Page</title>
+		<link rel="stylesheet" href="../styles.css">
+		<script src="../scripts/processFeebackForm.js"></script>
+		<script src="../scripts/pageNav.js"></script>
+	</head>
+
+	<body>
+		<?php include "visited.php"?>
+		<div class="flex_container">
+			<nav class ="nav">
+				<ul class="content nav_content">
+					<li id="nav_website_name"> David Jackson</li>
+					<li id="fill_nav"></li>
+					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
+					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
+					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
+					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
+					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<li id="nav_feedback"><button onClick="updateCurrentPage('Feedback')">Feedback</button></li>
+				</ul>
+			</nav>
+
+			<div class="content" id="main_content">
+
+			<div class="contacts">
+					<aside class="contact_fill"></aside>
+					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../images/mail.png"></a></aside>
+					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../images/linkedin.svg"></a></aside>
+					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../images/github-mark-white.svg"></a></aside>
+					<aside class="contacts" style="margin:0px;">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</aside>
+				</div>
+
+
+				<div class="current_content">
+					<div class="current_content_title">
+						<h1 id="content_title">Welcome To My Webpage!</h1>
+					</div>
+					<div class="example_content">
+						<div class="main_content">
+						
+							<img src="../images/home/banner.jpg" alt="Banner" style="width:100%;height:300px;">
+
+							<p>
+								Hi! My name is David Jackson - and this is my site that tells a little bit more about who I am and what I do. Feel free to look around!
+							</p>
+
+							<hr/>
+
+							<div class="home_page_card_section">
+							<h2  class="content_header">About Me</h2>
+							<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/aboutme.html">
+										<div class="home_page_card_content">
+										<h3 class="home_page_card_header">About Me</h3>
+											<span class="home_card_text">VidGet to know a little bit more about the creator of this site </span>
+										</div>
+										<img src="../images/home/aboutme.jpg" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+							</div>
+
+							<hr/>
+
+							<div class="home_page_card_section">
+									<h2  class="content_header">Projects</h2>
+
+
+								 	<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/projects/baldorf.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">baldorf</h3>
+											<span class="home_card_text">Video game adapted from Mytic Rhoads Productions - baldorf </span>
+										</div>
+										<img src="../images/home/baldorf.avif" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+
+									<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/projects/cards.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">Cards</h3>
+											<span class="home_card_text">Website hosting mutliple card game to play by yourself or with friends </span>
+										</div>
+										<img src="../images/home/cards.png" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+									<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/projects/intothedeep.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">Into the Deep</h3>
+											<span class="home_card_text">Prototype rogue-like dungeon devling video game made in the Unity Engine </span>
+										</div>
+										<img src="../images/home/banner.png" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+									<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/projects/art.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">Art</h3>
+											<span class="home_card_text">Collection of some of my art covering many mediums </span>
+										</div>
+										<img src="../images/home/art.png" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+							</div>
+
+							<hr/>
+
+							<div class="home_page_card_section">
+									<h2  class="content_header">Experience</h2>
+
+
+								 	<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/experience/softwareqaengineer.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">Software QA Engineer</h3>
+											<span class="home_card_text">Upcoming full time position at Hudl </span>
+										</div>
+										<img src="../images/home/hudl.jpg" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+
+									<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/experience/assistantoperator.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">Assistant Operator</h3>
+											<span class="home_card_text">Machine operator and worker at PCA </span>
+										</div>
+										<img src="../images/home/pca.png" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+									<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/experience/groundskeeper.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">Groundskeeper</h3>
+											<span class="home_card_text">General maintenance groundkeeper around the Club at Wynstones golf course </span>
+										</div>
+										<img src="../images/home/wynstone.jpg" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+									<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/experience/codinginstructor.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">Coding Instructor</h3>
+											<span class="home_card_text">Volunteer opportunity to teach the fundamentals of coding to school students </span>
+										</div>
+										<img src="../images/home/coding.jpg" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+									<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/experience/gameqa.html">
+										<div class="home_page_card_content">
+											<h3 class="home_page_card_header">Game QA</h3>
+											<span class="home_card_text">Take part in the development process of Poorly Timed Games - Grim Tranquility </span>
+										</div>
+										<img src="../images/home/gameqa.jpg" style="width: 200px; display: block; margin-left: auto;">
+									</a>
+
+							</div>
+
+							<hr/>
+
+							<div class="home_page_card_section">
+							<h2  class="content_header">Resume</h2>
+							<a class="home_page_card" style="border: 2px solid #A05FCC;" href="http://localhost/Quiz-mywebsite/pages/resume.html">
+										<div class="home_page_card_content">
+										<h3 class="home_page_card_header">Resume</h3>
+											<span class="home_card_text">List of academic achievements </span>
+										</div>
+										<img src="../images/home/unl.webp" style="width: 150px; display: block; margin-left: auto;">
+									</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+				<div >
+					<ul class="content_selection">
+						<li id="current_page_title">Home</li>
+						<li> <button id="content_selection_1" onclick="openNewPage('content_selection_1')" style="visibility: hidden"> Content Selection 1</button> </li>
+						<li> <button id="content_selection_2" onclick="openNewPage('content_selection_2')" style="visibility: hidden"> Content Selection 2</button> </li>
+						<li> <button id="content_selection_3" onclick="openNewPage('content_selection_3')" style="visibility: hidden"> Content Selection 3</button> </li>
+						<li> <button id="content_selection_4" onclick="openNewPage('content_selection_4')" style="visibility: hidden"> Content Selection 4</button> </li>
+						<li> <button id="content_selection_5" onclick="openNewPage('content_selection_5')" style="visibility: hidden"> Content Selection 5</button> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

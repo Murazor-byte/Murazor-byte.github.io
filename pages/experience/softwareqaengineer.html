@@ -14,29 +14,61 @@
 			<nav class ="nav">
 				<ul class="content nav_content">
 					<li id="nav_website_name">  David Jackson</li>
+					<li id="fill_nav"></li>
 					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
 					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
 					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
 					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
 					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<li id="nav_feedback"><button onClick="updateCurrentPage('Feedback')">Feedback</button></li>
 				</ul>
 			</nav>
 
 			<div class="content" id="main_content">
-				<div class="current_content">
-					<div class="current_content_title">
+
+				<div class="contacts">
+					<aside class="contact_fill"></aside>
+					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../../images/mail.png"></a></aside>
+					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../../images/linkedin.svg"></a></aside>
+					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../../images/github-mark-white.svg"></a></aside>
+					<aside class="contacts" style="margin:0px;">
 						<label class="switch">
 							<input type="checkbox">
 							<span class="slider round"></span>
 						</label>
+					</aside>
+				</div>
+
+
+				<div class="current_content">
+					<div class="current_content_title">
 						<h1 id="content_title">Software QA Engineer</h1>
 						<div id="fill"></div>
 					</div>
 
+
+					<img src="../../images/work/hudl.jpg" style="width: 65%;   display: block; margin-left: auto; margin-right: auto;">
+
+					<div class="skills">
+						<span class="skillset" id="skillset1">Python</span>
+						<span class="skillset" id="skillset2">Selenium</span>
+					</div>
+
+
 					<div class="example_content">
+						
+						<p style="margin: 3px 0px;">Hudl, Lincoln, Nebraksa</p>
+						<p style="margin: 3px 0px;">June 2023</p>
+
+						<hr/>
+
+
+						<h2 class="content_header">Description</h2>
 						<p>
-							Description of the current content
+							I am truly excited to announce that I will be started a position at Hudl as a Software Quality Assurance Engineer within the Lincoln, Nebraska Headqaurters in June of 2023.
+							Although as the time of writing, the team and project I will be assigned to is not yet disclosed. I will be working within the selenium library using the Python scripting language in order uphold the quality and functionality of Hudl's sites.
 						</p>
+
 					</div>
 				</div>
 
@@ -52,10 +84,6 @@
 				</div>
 			</div>
 		</div>
-
-		<footer>
-		</footer>
-
 	</body>
 
 </html>

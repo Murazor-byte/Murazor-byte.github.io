@@ -14,29 +14,78 @@
 			<nav class ="nav">
 				<ul class="content nav_content">
 					<li id="nav_website_name">  David Jackson</li>
+					<li id="fill_nav"></li>
 					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
 					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
 					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
 					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
 					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<li id="nav_feedback"><button onClick="updateCurrentPage('Feedback')">Feedback</button></li>
 				</ul>
 			</nav>
 
 			<div class="content" id="main_content">
-				<div class="current_content">
-					<div class="current_content_title">
+
+				<div class="contacts">
+					<aside class="contact_fill"></aside>
+					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../../images/mail.png"></a></aside>
+					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../../images/linkedin.svg"></a></aside>
+					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../../images/github-mark-white.svg"></a></aside>
+					<aside class="contacts" style="margin:0px;">
 						<label class="switch">
 							<input type="checkbox">
 							<span class="slider round"></span>
 						</label>
-						<h1 id="content_title">Game QA</h1>
+					</aside>
+				</div>
+
+
+				<div class="current_content">
+					<div class="current_content_title">
+						<h1 id="content_title">Game QA Tester</h1>
 						<div id="fill"></div>
 					</div>
 
+					<img src="../../images/work/gameqa.jpg" style="width: 45%;   display: block; margin-left: auto; margin-right: auto;">
+
+					<div class="skills">
+						<span class="skillset" id="skillset1">Detail</span>
+						<span class="skillset" id="skillset2">Game QA</span>
+						<span class="skillset" id="skillset3">Volunteer</span>
+					</div>
+
+
 					<div class="example_content">
-						<p>
-							Description of the current content
+						
+						<p style="margin: 3px 0px;">Poorly Timed Games.</p>
+						<p style="margin: 3px 0px;">April 2022</p>
+
+						<hr/>
+
+
+						<h2 class="content_header">Description</h2>
+						<p>From January to April of 2022 I took part in the qaulity assurance of the video game 'Grim Tranquility' developed by <a class="hyperlink" href="https://poorlytimedgames.com" target="_blank">Poorly Timed Games</a>. Over the cycle, I was given developer mods to identify any shortcoming, bugs, or inconsistencies brought from the game.
+							During this time I thoroughly tested the game for said bugs, as well as writing documentation and a review for the overall architecture of the game.
 						</p>
+
+						<p>Grim Tranquility is available now on <a class="hyperlink" href="https://store.steampowered.com/app/1697110/Grim_Tranquility/" target="_blank">Steam</a> where it is currently in early access.</p>
+
+						<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1697110/extras/Battle.png?t=1654099114">
+
+						<hr/>
+
+						<h2 class="content_header">Achievements</h2>
+						<p>This was a phenominal opportunity for me to be apart of another game in development, and understand the overall thought-process of another team when creating new features. Below is a brief list of my overall role in the late stages of the development process.</p>
+
+
+						<ul class="content_list">
+							<li>Tested new video game for bugs at pre-production as a final testing phase</li>
+							<li> Used creative methods to identify bugs and wrote report within the allotted deadline</li>
+						</ul>
+
+						
+						<p>The relavent images are taken directly from Poory Timed Games steam homepage</p>
+
 					</div>
 				</div>
 
@@ -52,10 +101,6 @@
 				</div>
 			</div>
 		</div>
-
-		<footer>
-		</footer>
-
 	</body>
 
 </html>

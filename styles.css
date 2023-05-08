@@ -1,34 +1,62 @@
 /*Base elements*/
 body { 
 	background-color: #2F2F2F;
+	font-family: 'Times New Roman', Times, serif;
+	line-height: 2;
 	color: #A05FCC;
 	margin: 0px;
+	overflow: hidden;
 }
 
 /*overwriting ul default top-bottom margins of 10px and padding of 40px*/
 ul{
-	margin: 0px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
 	padding: 0px;
 	list-style-type: none;
+}
+
+h1{
+	margin-bottom: 0px;
+}
+
+p{
+	padding-top: 10px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+hr{
+	width: 70%;
+	margin-top: 30px;
+	border-color: #a43cc7;
 }
 
 button{
 	border: 0px;
 	cursor: pointer;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .nav{
 	background-color: #2F2F2F;
 }
 
+.hyperlink{
+	color:#A05FCC;
+}
+
+
+
+
+
 
 /* The switch - the box around the slider */
 .switch {
 	position: relative;
 	display: inline-block;
-	width: 60px;
+	width: 50px;
 	height: 34px;
-	margin: 22px 50px 0px 19px;
+
   }
   
   /* Hide default HTML checkbox */
@@ -70,7 +98,7 @@ button{
   }
   
   input:checked + .slider:before {
-	transform: translateX(26px);
+	transform: translateX(18px);
   }
   
   /* Rounded sliders */
@@ -84,7 +112,28 @@ button{
 
 
 
-/* Light colors
+
+/*	Scrollbar	*/
+
+::-webkit-scrollbar{
+	width: 0.5em;
+	height: 0.5em;
+}
+
+::-webkit-scrollbar-track{
+	background-color: #2F2F2F;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #A05FCC;
+}
+
+
+
+
+
+/* 
+   Light colors
 	#723697		--body background, nav background
 	#8F42BD		--current_content background color, nav content button, content_selection li button
 	#635985		--slider background
@@ -111,9 +160,7 @@ button{
 	display: flex;	
 }
 
-.nav_content{
-	margin: 0px;
-}
+
 
 
 
@@ -121,30 +168,33 @@ button{
 /*Navigation Bar*/
 .nav_content li{
 	display: flex;
-	flex: 1.5;
-	margin: 0px 0px 2px 0px;
-	line-height: 75px;
 	font-weight: bold;
+	width : 8vw;
 }
 
 #nav_website_name {
 	background-color: #683DBA;
-	color: #2F2F2F;
-	margin: 0px 2px 5px 2px;
+	color: #ccc0d4;
 	padding-left: 10px;
-	height: 81px;
+	height: 61px;
 	font-size: 2em;
-	line-height: 81.px;
-	flex-grow: 1.75;
+	line-height: 55px;
+	flex-grow: 1.5;
 	text-align: left;
 	display: inline-block;
+	overflow: hidden;
+}
+
+#fill_nav{
+	flex-grow: 10;
+	background-color: #494949;
 }
 
 .nav_content li button{
 	background-color: #494949;
 	width: 100%;
-	height: 80px;
 	font-size: 1.25em;
+	overflow: hidden;
 }
 
 li button:hover{
@@ -165,37 +215,181 @@ li button:visited{
 
 
 
+
+
+
+/*contacts */
+.contact_fill{
+	margin-top: 25vh;
+}
+
+.contacts{
+	display: flex;
+	flex-direction: column;
+	width: 50px;
+	margin: 20px 0px;
+}
+
+.linkedin{
+	width: 40px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+
+
+
+
+
+/*Home page cards */
+
+.home_page_card_section{
+	display: flex;
+	flex-direction: column;
+}
+
+.home_page_card{
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	color:#ccc0d4;
+	text-align: left;
+	margin: 10px 0px;
+}
+
+.home_page_card_header{
+	margin: 0px;
+	padding-left: 20px;
+}
+
+.home_page_card_content{
+	display: flex;
+	flex-direction: column;
+}
+
+.home_card_text{
+	padding-left: 20px;
+	overflow: hidden;
+	font-size: 15px;
+}
+
+
+
+
 /*Main Content*/
 .current_content{
 	display: inline;
 	background-color: #494949;
-	margin: 5px 5px 5px 2px;
+	margin: 0px 0px 0px 2px;
 	flex: 1;
 	height: 89vh;
+	overflow-y:auto;
 }
 
 .current_content_title{
-	display: flex;
+	position: relative;
 	text-align: center;
 	font-size: 1.5em;
 	margin: 0px;
+	padding-top: 2vh;
 }
 
-.current_content_title h1{
-	margin-top: 10px;
+#content_title{
+	margin-top: 0px;
 	flex-grow: 5;
 	text-align: center;
-}
 
-#fill{
-	flex: 1;
 }
 
 .example_content{
 	font-size: 20px;
-	margin: 5px 10px 5px 10px;
-	padding: 5px;
+	margin: 0px 0px 5px 0px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 0px;
+	height: 75vh;
+	color: #ccc0d4;
+	text-align: center;
 }
+
+.skills{
+	margin: 20px 0px 20px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color:#ccc0d4;
+	height: 3%;
+	line-height: 25px;;
+	overflow: hidden;
+}
+
+.skillset{
+	margin: 0px 5px 0px 5px;
+	padding: 0px 3px 0px 3px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+#skillset1{
+	background-color: #37894c;
+}
+
+#skillset2{
+	background-color: #c54882;
+}
+
+#skillset3{
+	background-color: #444dcc;
+}
+
+#skillset4 {
+	background-color: #c84646;
+}
+
+#skillset5{
+	background-color: #36352e;
+}
+
+#skillset6{
+	background-color: #a43cc7;
+}
+
+.content_header{
+	text-align: center;
+	color: #A05FCC;
+	font-size: 40px;
+	margin: 5px 0px 5px 0px;
+}
+
+.content_list{
+	margin-left: 5%;;
+	list-style-type: circle;
+	font-size: 18px;
+	text-align: left;
+}
+
+.ordered_list{
+	list-style-type:decimal;
+}
+
+.nested_list{
+	padding-inline-start: 20px;
+	list-style-type: disc;
+}
+
+.deployment_card{
+	display: flex;
+	flex-direction: column;
+	color:#ccc0d4; 
+	text-decoration: none;
+}
+
+
+.deployment_card_text{
+	flex-direction: row;
+}
+
+
 
 
 
@@ -205,14 +399,18 @@ li button:visited{
 .content_selection{
 	display: flex;
 	flex-direction: column;
-	margin: 5px 2px 0px 0px;
-	width: 30vh;
+	color: #ccc0d4;
+	margin: 0px 2px 0px 0px;
+	width: 25vh;
+}
+
+.content_selection li button{
+	color: #ccc0d4;
 }
 
 #current_page_title{
 	background-color: #683DBA;
-	color: #2F2F2F;
-	margin-bottom: 2px;
+
 	line-height: 100px;
 	font-size: 2.5em;
 	display: inline-block;
@@ -220,14 +418,14 @@ li button:visited{
 
 .content_selection li{
 	display: flex;
-	margin: 0px 2px 0px 2px;
+	margin: 0px 0px 0px 0px;
 	text-align: center;
 }
 
 .content_selection li button{
 	background-color: #494949;
 	line-height: 70px;
-	font-size: 1.5em;
+	font-size: 1.35em;
 	width: 100%;
 }
 

@@ -14,48 +14,158 @@
 			<nav class ="nav">
 				<ul class="content nav_content">
 					<li id="nav_website_name">  David Jackson</li>
+					<li id="fill_nav"></li>
 					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
 					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
 					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
 					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
 					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<li id="nav_feedback"><button onClick="updateCurrentPage('Feedback')">Feedback</button></li>
 				</ul>
 			</nav>
 
 			<div class="content" id="main_content">
-				<div class="current_content">
-					<div class="current_content_title">
+
+				<div class="contacts">
+					<aside class="contact_fill"></aside>
+					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../../images/mail.png"></a></aside>
+					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../../images/linkedin.svg"></a></aside>
+					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../../images/github-mark-white.svg"></a></aside>
+					<aside class="contacts" style="margin:0px;">
 						<label class="switch">
 							<input type="checkbox">
 							<span class="slider round"></span>
 						</label>
+					</aside>
+				</div>
+
+
+				<div class="current_content">
+					<div class="current_content_title">
 						<h1 id="content_title">Into the Deep</h1>
+						<img src="../../images/Projects/IntoTheDeep/banner.png" style="width: 65%;   display: block; margin-left: auto; margin-right: auto;">
 						<div id="fill"></div>
+					</div>
+					<div class="skills">
+						<span class="skillset" id="skillset1">Unity</span>
+						<span class="skillset" id="skillset2">C#</span>
+						<span class="skillset" id="skillset3">Game Dev</span>
+						<span class="skillset" id="skillset4">Personal</span>
 					</div>
 
 					<div class="example_content">
 						<p>
-							Description of the current content
+							Into the Deep (unoffically named) is a yet another hard-rouge-like dungeon crawler made within the Unity Game Engine. I started this project during my studies in University and has been slowly been expanded on. Despite this still being a work in devlopment for almost 2 years,
+							the main architecture of the game is almost at its completion. Following the development of the 40+ milestone game currently resides in my personal notes and captures. Feel free to reach out if you're ever interested! But what is this overly-scoped game that I just can't give up on?
 						</p>
+
+						<hr/>
+
+						<h2 class="content_header">Overview</h2>
+						<p>Into the Deep is a rougue-like dungeon crawling rpg that was initially inspired from many of my favorite games in the industry-most notably 'Darkest Dungeon'. The game consists of numerous systems and architecture a rogue-like this should offer such as:</p>
+						<ul class="content_list">
+							<li>Procedurally generated dungeons, including dungeon layouts and events</li>
+							<li>Randomly generated Combat Rooms that are populated with unique interactable combat tile types and assets </li>
+							<li>Turn-based combat against varying enemy types and AI patterns that each hold unique skills</li>
+							<li>Inventory system hosting too many consumable items, armor and weapon sets</li>
+							<li>Progression system through a in-game town the player game restock at</li>
+							<li>Save System </li>
+						</ul>
+
+						<hr/>
+
+						<h2 class="content_header">Goal</h2>
+						<p>The main focus of the game revolves around the 'Dungeon' which can be thought of as a single entity containing multiple 'Dungeon Layers' that becomes progressively harder to clear by encountering more difficult enemies and events within.
+							The players goal within the game is to clear each layer within the dungeon, while not only encountering (potentionally) difficult event decisions and an endless hoard of monsters, but the back and forth battle with the 'Dungeon Meter' that gives the state of the Dungeons current level of severity.
+							<br><br>
+							If the player manages to clear all layers and the dungeon meter they'll be presented with a victory screen. Likewise, each failed run will compound through injuries, progressive refilling of the dungoen layers and the meter. A back and forth battle - the player against the Dungeon.
+						</p>
+
+						<hr/>
+
+						<h2 class="content_header">The Dungeon</h2>
+						<p>
+							The games dungeon uses procedural generation to create its layout and event system - to which everything is tied to.
+						</p>
+						<p>
+							The layout uses a simple design, that randomly generated rooms and corridors with varying length bends. Below is an instance of what the player might see on their first dungeon run at the start of the game.
+						</p>
+						
+						<img src="../../images/Projects/IntoTheDeep/layer1.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+						<p>
+							These parameters are progressively changed to increase the total number of rooms, corridors, their lengths, and the physical constraints the layout can be generated within. Below are a few dungeons that were created on the 5'th layer of this dungeon.
+						</p>
+
+						<img src="../../images/Projects/IntoTheDeep/layer2.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+						<p>You can see the number of rooms and overal space the dungoen can be created within it much greater than the first layer.</p>
+						<img src="../../images/Projects/IntoTheDeep/layer3.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;"> <br>
+						<img src="../../images/Projects/IntoTheDeep/layer4.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+
+
+						<p>
+							A cool thing when developing games, is the ability to break things. This layout can create a dungeon with 2,000 different rooms with connected corridors, before it begins break the game and processing.
+						</p>
+
+						<h3 class="content_header">Events</h3>
+						<p>
+							The events are created when each dungoen layout is made, that can either be benefitial, hurtful or a choice for the player to make. Each run is entirely unique with a numerous pool of events to grab from and are ranomly placed in cells throughout the dungoen.
+							Some events can be good to allow the player to heal.
+						</p>
+						<img src="../../images/Projects/IntoTheDeep/event1.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+						<p>While others can lead to a choice for the player to make which can lead to varying consequences</p>
+						<img src="../../images/Projects/IntoTheDeep/event2.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+						<p>In this case the fungi weren't poisonous!</p>
+						<img src="../../images/Projects/IntoTheDeep/event3.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+						<h3 class="content_header">Layers</h3>
+						<p>The Dungeon is broken down into multiple layers, in this case there are 5 that alter the gernation of the dungoen, making it harder to clear with more selective events and enemies to be encountered. 
+							Each layer can only be progressed to if the previous layer enemy pool threshold is met. </p>
+						<img src="../../images/Projects/IntoTheDeep/layers.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+						<hr/>
+
+						<h2 class="content_header">Combat</h2>
+						<p>Combat can be initaited when the player crosses certain events in the dungeon. Here the game utilizes randomly generated comabt rooms holding various enemy types and mini-bosses. The player can use any skills they've learned or aquired and boil down to
+							line attacks, sweeps, AOE's and direct attacks within this turn-order system. The combat system references many features from classic table-top games allowing for unique encounters each time.
+						</p>
+						<img src="../../images/Projects/IntoTheDeep/combat.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+						<p>As seen above, the game uses only Unity Assets, which is planned to be replaced in the near future.</p>
+
+						<hr/>
+
+						<h2 class="content_header">Progression</h2>
+						<p>Into the Dungeon allows the player to upgrade their skills, buy new equipment and armor when restocking at the town after each run. Although this is section is currently in development, we can see one of the shops below.</p>
+						<img src="../../images/Projects/IntoTheDeep/town.png" style="width: 75%;   display: block; margin-left: auto; margin-right: auto;">
+
+						<p>Remember when I said 'Hard rogue-like'. Into the Dungeon uses perma death if the player is to ever die within the game. Although this isn't hard to do - there are a few protective measure such as a behind the scenes roll with progressively worse odds the more times the player gets 'knocked down' in the dungoen. On a failed
+							they're game will end and their saved game will be wiped, while on a success an injury will be applied leaving long lasting effects throughout the game.
+						</p>
+
+						<hr>
+
+						<p>If you have any question or want to know more about the development, you can see my source code <a class="hyperlink" target="_blank" href="https://github.com/Murazor-byte/IntoTheDeep">here</a> or shoot me a message where I can provide what milestones have been completed and what's to come in the near future!</p>
+
 					</div>
 				</div>
 
 				<div >
 					<ul class="content_selection">
 						<li id="current_page_title">Projects</li>
-						<li> <button id="content_selection_1" onclick="openNewPage('content_selection_1')">baldorf 2.0</button> </li>
+						<li> <button id="content_selection_1" onclick="openNewPage('content_selection_1')">baldorf</button> </li>
 						<li> <button id="content_selection_2" onclick="openNewPage('content_selection_2')">Cards</button> </li>
 						<li> <button id="content_selection_3" onclick="openNewPage('content_selection_3')" >Into the Deep</button> </li>
-						<li> <button id="content_selection_4" onclick="openNewPage('content_selection_4')" style="visibility: hidden"> Content Selection 4</button> </li>
+						<li> <button id="content_selection_4" onclick="openNewPage('content_selection_4')"> Art</button> </li>
 						<li> <button id="content_selection_5" onclick="openNewPage('content_selection_5')" style="visibility: hidden"> Content Selection 5</button> </li>
 					</ul>
 				</div>
 			</div>
 		</div>
-
-		<footer>
-		</footer>
-
 	</body>
 
 </html>

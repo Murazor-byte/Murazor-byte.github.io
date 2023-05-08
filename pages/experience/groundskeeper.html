@@ -14,29 +14,74 @@
 			<nav class ="nav">
 				<ul class="content nav_content">
 					<li id="nav_website_name">  David Jackson</li>
+					<li id="fill_nav"></li>
 					<li id="nav_home"> <button onclick="updateCurrentPage('Home')"> Home </button> </li>
 					<li id="nav_aboutMe"> <button onclick="updateCurrentPage('About Me')"> About Me</button> </li>
 					<li id="nav_projects"> <button onclick="updateCurrentPage('Projects')"> Projects </button> </li>
 					<li id="nav_experience"> <button onclick="updateCurrentPage('Experience')"> Experience </button> </li>
 					<li id="nav_resume"> <button onclick="updateCurrentPage('Resume')"> Resume </button> </li>
+					<li id="nav_feedback"><button onClick="updateCurrentPage('Feedback')">Feedback</button></li>
 				</ul>
 			</nav>
 
 			<div class="content" id="main_content">
-				<div class="current_content">
-					<div class="current_content_title">
+
+				<div class="contacts">
+					<aside class="contact_fill"></aside>
+					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../../images/mail.png"></a></aside>
+					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../../images/linkedin.svg"></a></aside>
+					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../../images/github-mark-white.svg"></a></aside>
+					<aside class="contacts" style="margin:0px;">
 						<label class="switch">
 							<input type="checkbox">
 							<span class="slider round"></span>
 						</label>
+					</aside>
+				</div>
+
+
+				<div class="current_content">
+					<div class="current_content_title">
 						<h1 id="content_title">Groundskeeper</h1>
 						<div id="fill"></div>
 					</div>
 
+
+					<img src="../../images/work/wynstone.jpg" style="width: 65%;   display: block; margin-left: auto; margin-right: auto;">
+
+					<div class="skills">
+						<span class="skillset" id="skillset1">Detail</span>
+						<span class="skillset" id="skillset2">Communication</span>
+						<span class="skillset" id="skillset3">Teamwork</span>
+						<span class="skillset" id="skillset4">Reliability</span>
+					</div>
+
 					<div class="example_content">
-						<p>
-							Description of the current content
+						
+						
+						<p style="margin: 3px 0px;">The Club at Wynstone, North Barrington, IL.</p>
+						<p style="margin: 3px 0px;">June 2020</p>
+
+						<hr/>
+
+
+						<h2 class="content_header">Description</h2>
+						<p>I took part in the tending to the recreational ground at the <a class="hyperlink" href="https://www.wynstone.org/" target="_blank">Club at Wynstone</a> during the summer months of June-August of 2020. I was charged to taking care of the resort grounds through general labor jobs, such as 
+							mowing the greens, weeding, digging, assisting resort golfer and staff and overall general maintenance.
 						</p>
+
+						<hr/>
+
+						<h2 class="content_header">Achievements</h2>
+						<p>This position set the way for myself to assimilate well within teams escpecially in a fast paced environment during all hours of the day. With this I strengthed my attention to detail in all aspcets of my work, and ensuring the quality of the work is at par with the company and the members.</p>
+
+
+						<ul class="content_list">
+							<li>Created positive relationships with club members through on-field assistance</li>
+							<li> Improved resort quality through maintenance projects performed with a team of 5 people</li>
+						</ul>
+
+
 					</div>
 				</div>
 
@@ -52,10 +97,6 @@
 				</div>
 			</div>
 		</div>
-
-		<footer>
-		</footer>
-
 	</body>
 
 </html>
