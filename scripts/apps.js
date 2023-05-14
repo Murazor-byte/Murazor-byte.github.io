@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log(entry);
         if(entry.isIntersecting){
           entry.target.classList.add('show');
+<<<<<<< HEAD
         } 
+=======
+        }
+>>>>>>> a96259d317999a16dc13cd31d779e386055e6d7c
       });
     });
 
