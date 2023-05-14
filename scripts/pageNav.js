@@ -24,7 +24,6 @@ function updateCurrentPageTitle(title){
 
 
 
-
 function updateExampleList(page){
 
     switch(page){
