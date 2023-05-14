@@ -58,8 +58,8 @@ button{
 .hidden {
 	opacity: 0;
 	filter: blur(3px);
-	transform: translateX(-100%);
-	transition: all 0.7s;
+	transform: translateY(30%);
+	transition: all 0.55s;
 }
 
 

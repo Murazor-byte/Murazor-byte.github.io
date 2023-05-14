@@ -28,12 +28,12 @@ function updateCurrentPageTitle(title){
 function updateExampleList(page){
 
     switch(page){
-        case 'Home': window.open("https://murazor-byte.github.io/pages/index.html", "_self"); break;
+        case 'Home': window.open("https://murazor-byte.github.io/pages/index.php", "_self"); break;
         case "About Me":  window.open("https://murazor-byte.github.io/pages/aboutme.html", "_self"); break;
         case "Projects": updateProjectsExampleList(); break;
         case "Experience": updateExpereienceExampleList(); break;
         case "Resume": window.open("https://murazor-byte.github.io/pages/resume.html", "_self"); break;
-        case "Feedback" : window.open("https://murazor-byte.github.io/pages/feedback.html", "_self"); break;
+        case "Feedback" : window.open("https://murazor-byte.github.io/pages/feedback.php", "_self"); break;
         default:
     }
 }
@@ -116,4 +116,24 @@ function openNewPage(page){
     let currentPageTitle = document.getElementById('current_page_title').innerHTML;
 
    window.open("https://murazor-byte.github.io/pages/" + currentPageTitle.replace(/\s/g, '').toLowerCase() + "/"  + currentSelection.replace(/\s/g, '').toLowerCase() + ".html", "_self");
+}
+
+//highlights the currently selected page on the sidebar for either projects or experience pages
+function highlightSideBar(index){
+    getContentElements();
+    var content;
+
+    switch(index){
+        case 0: content = contentSelection1; break;
+        case 1: content = contentSelection2; break;
+        case 2: content = contentSelection3; break;
+        case 3: content = contentSelection4; break;
+        case 4: content = contentSelection5; break;
+        default: return;
+    }
+
+    content.style.color = "#daa4ff";
+    content.style.transform = "translateY(-2px)";
+    content.style.borderRadius = "7px";
+    content.style.height = "70%";
 }

@@ -1,7 +1,7 @@
 <?php
 
 // Set the name of the cookie that will store the unique visitor ID
-$cookie_name = "visitor_id";
+$cookie_name = "visit_id";
 
 // Check if the visitor has a cookie with a unique ID
 if (!isset($_COOKIE[$cookie_name])) {
