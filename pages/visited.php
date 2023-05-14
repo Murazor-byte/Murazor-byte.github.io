@@ -1,7 +1,7 @@
 <?php
 
 // Set the name of the cookie that will store the unique visitor ID
-$cookie_name = "my_website_visitor_id";
+$cookie_name = "visitor_id";
 
 // Check if the visitor has a cookie with a unique ID
 if (!isset($_COOKIE[$cookie_name])) {
@@ -17,8 +17,8 @@ if (!isset($_COOKIE[$cookie_name])) {
     $file = fopen($file_name, "r+");
     flock($file, LOCK_EX);
     $count = intval(fgets($file)) + 1;
-    ftruncate($file, 0);
-    rewind($file);
+   
+    rewind($file); ftruncate($file, 0);
     fwrite($file, $count);
     fflush($file);
     flock($file, LOCK_UN);
@@ -33,9 +33,22 @@ if (!isset($_COOKIE[$cookie_name])) {
 
 // Display the counter of unique visitors
 $file_name = "visitor_count.txt";
+
+
 $file = fopen($file_name, "r");
-$count = intval(fgets($file));
-fclose($file);
-echo "<p>Number of unique visitors: " . $count . "</p>";
+if ($file) {
+    $line = fgets($file);
+    if ($line !== false) {
+        $count = intval($line);
+    } else {
+        echo "Error: could not read first line of file";
+    }
+    fclose($file);
+} else {
+    echo "Error: could not open file";
+}
+
+echo "Number of unique visitors: " . $count;
+
 
 ?>

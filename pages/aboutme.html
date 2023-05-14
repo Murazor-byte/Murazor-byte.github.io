@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../styles.css">
 		<script src="../scripts/processFeebackForm.js"></script>
 		<script src="../scripts/pageNav.js"></script>
+		<script src="../scripts/apps.js"></script>
 	</head>
 
 	<body>
@@ -31,12 +32,6 @@
 					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../images/mail.png"></a></aside>
 					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../images/linkedin.svg"></a></aside>
 					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../images/github-mark-white.svg"></a></aside>
-					<aside class="contacts" style="margin:0px;">
-						<label class="switch">
-							<input type="checkbox">
-							<span class="slider round"></span>
-						</label>
-					</aside>
 				</div>
 
 
@@ -58,32 +53,37 @@
 
 
 						<h2 class="content_header">So why are you reading this?</h2>
-						<p>
-							That's probably to learn a little more about me and who I am.
-						</p>
-						<p>
-							I am David Jackson - the creator of this portfolio page. I'm currently a senior undergraduate studying at the University of Nebraska-Lincoln, where I'll be gradauting in May of 2023 with a Bachelors in Computer Science.
-							I am someone who learns for the sake of loving it, and have taken this to heart with my studies at university. As a whole, I'm someone who is continuously intrigued for learning.
-						</p>
+						<div class="hidden">
+							<p>
+								That's probably to learn a little more about me and who I am.
+							</p>
+							<p>
+								I am David Jackson - the creator of this portfolio page. I'm currently a senior undergraduate studying at the University of Nebraska-Lincoln, where I'll be gradauting in May of 2023 with a Bachelors in Computer Science.
+								I am someone who learns for the sake of loving it, and have taken this to heart with my studies at university. As a whole, I'm someone who is continuously intrigued for learning.
+							</p>
+						</div>
 
 						<hr/>
 
 						<h2 class="content_header">How about some relevant info?</h2>
-						<p>
-							Sure! My skills have lied in the Software and Computer Science industry for 4+ years now, collaborating and pursuing the incredibly rich field.
-							My focus is trained primarily on back-end systems, targeting data structures and algorithms, and opening doors for new design implementations. Although a broad area, I have experience of working with communication networks, embedded systems, game development, web development, AI, and pursuing my love of art with my minor!
-							I am currently residing in the Lincoln-Nebraska area where I hold a position as a Software QA Engineer at Hudl!
-						</p>
-						<p>
-							The goal I wish to achieve and the reason I came in this industry in the first place is to make an imipactful change on other people, through experiences of the sites, products or games I make. This site in particular will mark a little more about who I am, what I do and what I have and wish to accomplish. 
-							The idea is to create a positive experience -for even a single experience- as this indsutry has done for me.
-						</p>
+						<div class="hidden">
+							<p>
+								Sure! My skills have lied in the Software and Computer Science industry for 4+ years now, collaborating and pursuing the incredibly rich field.
+								My focus is trained primarily on back-end systems, targeting data structures and algorithms, and opening doors for new design implementations. Although a broad area, I have experience of working with communication networks, embedded systems, game development, web development, AI, and pursuing my love of art with my minor!
+								I am currently residing in the Lincoln-Nebraska area where I hold a position as a Software QA Engineer at Hudl!
+							</p>
+							<p>
+								The goal I wish to achieve and the reason I came in this industry in the first place is to make an imipactful change on other people, through experiences of the sites, products or games I make. This site in particular will mark a little more about who I am, what I do and what I have and wish to accomplish. 
+								The idea is to create a positive experience -for even a single experience- as this indsutry has done for me.
+							</p>
 
-						<p>Other than the technicalities, if you see me - I'll be passing my time as an active nature enthusiast, coding hobbiest, and music lover as both a devotee and in trade.</p>
+							<p>Other than the technicalities, if you see me - I'll be passing my time as an active nature enthusiast, coding hobbiest, and music lover as both a devotee and in trade.</p>
+						</div>
+					
 					</div>
 				</div>
 
-				<div >
+				<div  class="sidebar">
 					<ul class="content_selection">
 						<li id="current_page_title">About Me</li>
 						<li> <button id="content_selection_1" onclick="openNewPage('content_selection_1')" style="visibility: hidden"> Content Selection 1</button> </li>

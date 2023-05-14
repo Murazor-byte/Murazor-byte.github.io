@@ -3,7 +3,7 @@ body {
 	background-color: #2F2F2F;
 	font-family: 'Times New Roman', Times, serif;
 	line-height: 2;
-	color: #A05FCC;
+	color: #daa4ff;
 	margin: 0px;
 	overflow: hidden;
 }
@@ -39,12 +39,57 @@ button{
 
 .nav{
 	background-color: #2F2F2F;
+	box-shadow: 0 1px 0px 0px #2F2F2F;
+	z-index: 1;
 }
 
 .hyperlink{
 	color:#A05FCC;
 }
 
+
+@media screen and (max-width: 800px) {
+	.sidebar {
+		display: none;
+	}
+}
+
+
+.hidden {
+	opacity: 0;
+	filter: blur(3px);
+	transform: translateX(-100%);
+	transition: all 0.7s;
+}
+
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+.home_page_card:nth-child(2){
+	transition-delay: 200ms;
+}
+.home_page_card:nth-child(3){
+	transition-delay: 300ms;
+}
+.home_page_card:nth-child(4){
+	transition-delay: 400ms;
+}
+.home_page_card:nth-child(5){
+	transition-delay: 500ms;
+}
+.home_page_card:nth-child(5){
+	transition-delay: 600ms;
+}
+
+@media(prefers-reduced-motion){
+	.hidden{
+		transition: none;
+	}
+}
 
 
 
@@ -132,23 +177,6 @@ button{
 
 
 
-/* 
-   Light colors
-	#723697		--body background, nav background
-	#8F42BD		--current_content background color, nav content button, content_selection li button
-	#635985		--slider background
-	#B3B3B3		--button hover, slider background checked, page titles
-	#CCCCCC		--font color, slider before, li button color, button visisted
-
-
-   Dark colors
-	#2F2F2F		--body background, nav background
-	#494949		--current_content background color, nav content button, content_selection li button
-	#635985		--slider background
-	#683DBA		--button hover, slider background checked, page titles
-	#A05FCC		--font color, slider before, li button color, button visisted
-*/
-
 
 /*Base flex elements */
 .flex_container{
@@ -170,6 +198,7 @@ button{
 	display: flex;
 	font-weight: bold;
 	width : 8vw;
+	background: #494949;
 }
 
 #nav_website_name {
@@ -199,12 +228,17 @@ button{
 
 li button:hover{
 	text-decoration: none;
-	color : black;
-	background-color: #683DBA;
+	color : #A05FCC;
+	transform: translateY(-2px);
+	background-color: #565656;
+	border-radius: 7px;
+	height: 70%;
+	align-self: center;
 }
 
 li button{
-	color: #A05FCC;
+	color: #f1ddff;
+	transition: transform 0.2s ease-in-out;
 }
 
 li button:visited{
@@ -220,7 +254,7 @@ li button:visited{
 
 /*contacts */
 .contact_fill{
-	margin-top: 25vh;
+	margin-top: 30vh;
 }
 
 .contacts{
@@ -319,7 +353,7 @@ li button:visited{
 	justify-content: center;
 	color:#ccc0d4;
 	height: 3%;
-	line-height: 25px;;
+	align-items: center;
 	overflow: hidden;
 }
 
@@ -327,7 +361,7 @@ li button:visited{
 	margin: 0px 5px 0px 5px;
 	padding: 0px 3px 0px 3px;
 	font-size: 20px;
-	border-radius: 5px;
+	border-radius: 17px;
 }
 
 #skillset1{
@@ -356,7 +390,7 @@ li button:visited{
 
 .content_header{
 	text-align: center;
-	color: #A05FCC;
+	color: #c474fa;
 	font-size: 40px;
 	margin: 5px 0px 5px 0px;
 }
