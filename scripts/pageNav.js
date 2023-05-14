@@ -28,12 +28,12 @@ function updateCurrentPageTitle(title){
 function updateExampleList(page){
 
     switch(page){
-        case 'Home': window.open("https://murazor-byte.github.io/pages/index.php", "_self"); break;
+        case 'Home': window.open("https://murazor-byte.github.io/pages/index.html", "_self"); break;
         case "About Me":  window.open("https://murazor-byte.github.io/pages/aboutme.html", "_self"); break;
         case "Projects": updateProjectsExampleList(); break;
         case "Experience": updateExpereienceExampleList(); break;
         case "Resume": window.open("https://murazor-byte.github.io/pages/resume.html", "_self"); break;
-        case "Feedback" : window.open("https://murazor-byte.github.io/pages/feedback.php", "_self"); break;
+        case "Feedback" : window.open("https://murazor-byte.github.io/pages/feedback.html", "_self"); break;
         default:
     }
 }
