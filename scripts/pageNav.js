@@ -28,12 +28,12 @@ function updateCurrentPageTitle(title){
 function updateExampleList(page){
 
     switch(page){
-        case 'Home': window.open("http://localhost/Mywebsite/pages/index.php", "_self"); break;
-        case "About Me":  window.open("http://localhost/Mywebsite/pages/aboutme.html", "_self"); break;
+        case 'Home': window.open("https://murazor-byte.github.io/index.html", "_self"); break;
+        case "About Me":  window.open("https://murazor-byte.github.io/aboutme.html", "_self"); break;
         case "Projects": updateProjectsExampleList(); break;
         case "Experience": updateExpereienceExampleList(); break;
-        case "Resume": window.open("http://localhost/Mywebsite/pages/resume.html", "_self"); break;
-        case "Feedback" : window.open("http://localhost/Mywebsite/pages/feedback.php", "_self"); break;
+        case "Resume": window.open("https://murazor-byte.github.io/resume.html", "_self"); break;
+        case "Feedback" : window.open("https://murazor-byte.github.io/feedback.php", "_self"); break;
         default:
     }
 }
@@ -115,5 +115,5 @@ function openNewPage(page){
     let currentSelection = document.getElementById(page).innerText;
     let currentPageTitle = document.getElementById('current_page_title').innerHTML;
 
-   window.open("http://localhost/Mywebsite/pages/" + currentPageTitle.replace(/\s/g, '').toLowerCase() + "/"  + currentSelection.replace(/\s/g, '').toLowerCase() + ".html", "_self");
+   window.open("https://murazor-byte.github.io/" + currentPageTitle.replace(/\s/g, '').toLowerCase() + "/"  + currentSelection.replace(/\s/g, '').toLowerCase() + ".html", "_self");
 }
