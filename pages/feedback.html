@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../styles.css">
 		<script src="../scripts/processFeebackForm.js"></script>
 		<script src="../scripts/pageNav.js"></script>
+		<script src="../scripts/apps.js"></script>
 	</head>
 
 	<body>
@@ -31,12 +32,6 @@
 					<aside><a href="mailto:davidtjackson37@gmail.com" target="_blank"><img class="contacts" src="../images/mail.png"></a></aside>
 					<aside><a href="https://www.linkedin.com/in/davidtjackson37/" target="_blank"><img class="linkedin" src="../images/linkedin.svg"></a></aside>
 					<aside><a href="https://github.com/" target="_blank"><img  class="contacts" src="../images/github-mark-white.svg"></a></aside>
-					<aside class="contacts" style="margin:0px;">
-						<label class="switch">
-							<input type="checkbox">
-							<span class="slider round"></span>
-						</label>
-					</aside>
 				</div>
 
 
@@ -46,22 +41,22 @@
 						<div id="fill"></div>
 					</div>
 					<div class="example_content">
-						<form id="FeedbackForm" onsubmit="processForm()">
-                            <p>To give us some feedabck, please fill in the follow form<br></p>
+						<form id="FeedbackForm" method="post" action="contact.php" onsubmit="processForm()">
+                            <p class="hidden">If you fill like there's something I can add or change let me know!<br></p>
     
-                            <fieldset>
+                            <fieldset class="hidden">
                                 <legend>Feeback Submission</legend>
                                 <label for="feedaback_message">What's the problem?</label>
                                 <input id="feedaback_message" type="text" name="feedback_message" size="50"><br><br>
     
-                                <label for="rating">How would you rate your experience with us?</label>
+                                <label for="rating">How would you rate the overall flow & feel?</label>
                                     <input type="radio" id="rating1" name="rating" value="1">Terrible
                                     <input type="radio" id="rating2" name="rating" value="2">Bad
                                     <input type="radio" id="rating3" name="rating" value="3">Average
                                     <input type="radio" id="rating4" name="rating" value="4">Good
                                     <input type="radio" id="rating5" name="rating" value="5">Excellent
     
-                                <p>Let us know where we can reach you</p>
+                                <p>Let me know where I can reach you</p>
                                 <label for="email">Email Address</label>
                                 <input id="email" type="text" name="email" size="35"><br><br>
     
@@ -71,7 +66,7 @@
 					</div>
 				</div>
 
-				<div >
+				<div class="sidebar">
 					<ul class="content_selection">
 						<li id="current_page_title">Feedback</li>
 						<li> <button id="content_selection_1" onclick="openNewPage('content_selection_1')" style="visibility: hidden"> Content Selection 1</button> </li>
@@ -84,5 +79,5 @@
 			</div>
 		</div>
 	</body>
-
+	<?php include 'contact.php'?>
 </html>
